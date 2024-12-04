@@ -1,9 +1,9 @@
-@id=67506183b7f5e8d28b7cba28
+@id=67505f051311ad1e3781cb6b
 ### create user
 POST http://localhost:3000/users
 Content-Type: application/json
 {
-  "name":"Pojok Code",
+  "name":"User Test",
   "email":"pojok@gmail.com"
 }
 
