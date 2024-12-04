@@ -1,0 +1,24 @@
+@id=67506183b7f5e8d28b7cba28
+### create user
+POST http://localhost:3000/users
+Content-Type: application/json
+{
+  "name":"Pojok Code",
+  "email":"pojok@gmail.com"
+}
+
+### update user
+PUT http://localhost:3000/users/{{id}}
+Content-Type: application/json
+{
+  "name":"Pojok Code",
+  "email":"pojok@gmail.com"
+}
+
+### find by id
+GET http://localhost:3000/users/{{id}}
+Content-Type: application/json
+
+### delete user
+DELETE http://localhost:3000/users/{{id}}
+Content-Type: application/json

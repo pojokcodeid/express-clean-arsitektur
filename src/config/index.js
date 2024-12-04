@@ -1,9 +1,8 @@
+import dotenv from "dotenv";
 
-// src/config/index.js
-import app from '../infrastructure/webserver/server.js';
+dotenv.config();
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port http://localhost:${PORT}`);
-});
+export default {
+  port: process.env.PORT || 3000,
+  dbUri: process.env.DB_URI || "mongodb://localhost:27017/clean-architecture",
+};

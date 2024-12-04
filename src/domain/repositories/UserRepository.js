@@ -1,7 +1,18 @@
-// src/domain/repositories/UserRepository.js
 class UserRepository {
-  async save(user) {
-    throw new Error('Method not implemented');
+  async create(user) {
+    throw new Error("Not implemented");
+  }
+
+  async findById(id) {
+    throw new Error("Not implemented");
+  }
+
+  async update(id, user) {
+    throw new Error("Not implemented");
+  }
+
+  async delete(id) {
+    throw new Error("Not implemented");
   }
 }
 
